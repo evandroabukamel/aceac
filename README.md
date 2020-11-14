@@ -1,6 +1,7 @@
-# aceac
+# Autoconhecimento é autocuidado.
 
-Autoconhecimento é autocuidado.
+App created for a project of physiotherapy college for my cousin.
+It just contains some texts and images of exercises for people who work seated or standing.
 
 ## Getting Started
 
