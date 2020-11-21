@@ -4,6 +4,7 @@ import 'package:aceac/screens/benefits_screen.dart';
 import 'package:aceac/screens/exercises_screen.dart';
 import 'package:aceac/screens/home_screen.dart';
 import 'package:aceac/screens/seated_exercises_screen.dart';
+import 'package:aceac/screens/standup_exercises_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -72,6 +73,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => HomeScreen(),
         '/exercises': (context) => ExercisesScreen(),
         '/seated-exercises': (context) => SeatedExercisesScreen(),
+        '/standup-exercises': (context) => StandupExercisesScreen(),
         '/benefits': (context) => BenefitsScreen(),
         '/about': (context) => AboutScreen(),
       },

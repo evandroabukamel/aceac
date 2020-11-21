@@ -6,9 +6,13 @@ import 'package:aceac/screens/components/organisms/card_list.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class SeatedExercisesView extends StatelessWidget {
-  SeatedExercisesView({Key key, @required this.exercisePlan, @required this.exercises}) : super(key: key);
+class TypedExercisesView extends StatelessWidget {
+  TypedExercisesView({Key key,
+    @required this.title,
+    @required this.exercisePlan,
+    @required this.exercises}) : super(key: key);
 
+  final String title;
   final String exercisePlan;
   final List<Exercise> exercises;
 
@@ -28,7 +32,7 @@ class SeatedExercisesView extends StatelessWidget {
           GoBack(onPressed: () => Navigator.pop(context)),
           SizedBox(height: 20),
           Text(
-            'PLANO DE GINÁSTICA LABORAL',
+            title,
             style: Theme.of(context).textTheme.headline1,
           ),
           SizedBox(height: 10),

@@ -1,6 +1,16 @@
 import 'package:aceac/models/exercise.dart';
-import 'package:aceac/screens/views/seated_exercises_view.dart';
+import 'package:aceac/screens/views/typed_exercises_view.dart';
 import 'package:flutter/material.dart';
+
+///
+/// Exercises screen that shows seated exercises.
+///
+class SeatedExercisesScreen extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return _SeatedExercisesScreen();
+  }
+}
 
 class _SeatedExercisesScreen extends State<SeatedExercisesScreen> {
   final String exercisePlan = 'OBJETIVO: Saúde e bem estar. Relaxamento total.'
@@ -81,27 +91,14 @@ class _SeatedExercisesScreen extends State<SeatedExercisesScreen> {
         description: 'Ainda sentado, apóie um pé em cima do outro mantendo a perna de baixo '
             'levemente flexionada e a de cima esticada. Leve os braços em direção a pronta do pé. '
             'Repita o exercícios com as pernas invertidas.'),
-    Exercise(
-        imagePath: 'assets/images/seated/pos15.png',
-        description: 'Permaneça sentado e dobre uma perna em cima da outra. Em seguida, encline '
-            'o corpo para baixo e deixe os braços soltos.'),
   ];
 
   @override
   Widget build(BuildContext context) {
-    return SeatedExercisesView(
+    return TypedExercisesView(
+      title: 'PLANO DE GINÁSTICA LABORAL',
       exercisePlan: exercisePlan,
       exercises: exercises,
     );
-  }
-}
-
-///
-/// Exercises screen where the user can choose between seated or stand-up.
-///
-class SeatedExercisesScreen extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    return _SeatedExercisesScreen();
   }
 }

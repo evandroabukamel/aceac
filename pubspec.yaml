@@ -63,7 +63,15 @@ flutter:
     - assets/images/seated/pos12.png
     - assets/images/seated/pos13.png
     - assets/images/seated/pos14.png
-    - assets/images/seated/pos15.png
+    - assets/images/standup/pos01.png
+    - assets/images/standup/pos02.png
+    - assets/images/standup/pos03.png
+    - assets/images/standup/pos04.png
+    - assets/images/standup/pos05.png
+    - assets/images/standup/pos06.png
+    - assets/images/standup/pos07.png
+    - assets/images/standup/pos08.png
+    - assets/images/standup/pos09.png
 
   fonts:
     - family: Inter

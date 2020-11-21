@@ -25,9 +25,10 @@ class ExerciseCard extends StatelessWidget {
               alignment: Alignment.topCenter,
             ),
             SizedBox(height: 10),
-            Text(exercise.description,
-              style: Theme.of(context).textTheme.bodyText2,
-            )
+            if (null != exercise.description)
+              Text(exercise.description,
+                style: Theme.of(context).textTheme.bodyText2,
+              )
           ],
         ),
       ),
